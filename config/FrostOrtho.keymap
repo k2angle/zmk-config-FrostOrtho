@@ -18,7 +18,14 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 12>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -101,7 +108,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp DEL  &trans  &trans   &kp ESCAPE
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_2 {
@@ -112,7 +119,7 @@
 &mt LEFT_CONTROL LS(MINUS)  &kp ENTER  &trans  &trans  &trans             &trans      &trans            &trans            &trans                &kp LS(NUMBER_1)   &kp EQUAL
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_3 {
@@ -123,7 +130,7 @@
 &trans          &trans          &trans          &trans           &trans   &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_4 {
@@ -134,7 +141,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans        &trans        &trans        &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_5 {
@@ -145,7 +152,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         MOUSE {
@@ -156,7 +163,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_7 {
@@ -167,7 +174,7 @@
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
     };
 };
