@@ -30,11 +30,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <35 24>;
         };
-
-        blue {
-            bindings = <&lt 4 ESCAPE>;
-            key-positions = <30 31 32>;
-        };
     };
 
     macros {
