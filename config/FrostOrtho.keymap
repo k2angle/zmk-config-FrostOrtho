@@ -73,22 +73,22 @@
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
 
-        vol_up_down: vol_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            tap-ms = <5>;
-            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
-        };
+        //vol_up_down: vol_up_down {
+        //    compatible = "zmk,behavior-sensor-rotate";
+        //    #sensor-binding-cells = <0>;
+        //    tap-ms = <5>;
+        //    bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
+        //};
 
         // DYA Studio用
 
-        rsr_vol: rsr_vol {
-            compatible = "zmk,behavior-runtime-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            tap-ms = <5>;
-            cw-binding = <&kp C_VOL_DN>;
-            ccw-binding = <&kp C_VOL_UP>;
-        };
+        //rsr_vol: rsr_vol {
+        //    compatible = "zmk,behavior-runtime-sensor-rotate";
+        //    #sensor-binding-cells = <0>;
+        //    tap-ms = <5>;
+        //    cw-binding = <&kp C_VOL_DN>;
+        //    ccw-binding = <&kp C_VOL_UP>;
+        //};
     };
 
     keymap {
